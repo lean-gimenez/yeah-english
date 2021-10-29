@@ -52,7 +52,7 @@ ul, ol{
 }
 
 .banner__longertext{
-    background-color: rgba(255,255,255,.8);
+    background-color: rgba(255,255,255,.6);
     border-radius: 2%;
     height: fit-content;
 }
@@ -62,14 +62,14 @@ ul, ol{
 }
 
 .index__button{
-    font-size: x-large;
+    font-size: 140%;
     background-color: #692dad;
     border: none;
 }
 
 .index__button:hover{
-    font-size: xx-large;
-    background-color: #5c05c0;
+    font-size: 150%;
+    background-color: #450391;
     border: none;
 }
 
@@ -83,6 +83,18 @@ video{
     font-size: xxx-large;
     border-top: white solid 0.5rem;
     border-bottom: white solid 0.5rem;
+    overflow: hidden;
+    background: linear-gradient(to right, midnightblue, midnightblue 50%, white 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 1s ease;
+}
+
+.video__title:hover{
+    background-position: 0 100%;
 }
 
 /* FOOTER */
