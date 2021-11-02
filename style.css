@@ -3,11 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: content-box;
-}
+
 
 .text{
     font-family: PT Sans, sans-serif;
@@ -30,7 +26,6 @@ ul, ol{
 /**************************** INDEX ****************************/
 
 .index__body{
-    position: relative;
     background-image: url(./images/ireland.jpg);
     background-position: center;
     background-size: cover;
@@ -44,58 +39,68 @@ ul, ol{
 }
 
 /* BANNER */
-.banner__text{
-    font-size: 6rem;
-    font-weight: 500;
-    color: white;
-    text-shadow: #44315D 1rem 6rem 0.8rem;
+
+.banner{
+    margin-top: 10%;
 }
 
-.banner__longertext{
-    background-color: rgba(255,255,255,.6);
-    border-radius: 2%;
-    height: fit-content;
-}
+    .banner__text{
+        font-size: 6rem;
+        font-weight: 500;
+        color: white;
+        text-shadow: #44315D 1rem 6rem 0.8rem;
+    }
 
-.banner__p{
-    font-size:x-large;
-}
+    .banner__longertext{
+        background-color: rgba(255, 255, 255, .6);
+        border-radius: 2%;
+        height: fit-content;
+        padding: 2rem;
+        margin-top: 10rem;
+    }
 
-.index__button{
-    font-size: 140%;
-    background-color: #692dad;
-    border: none;
-}
+    .banner__p{
+        font-size: x-large;
+    }
 
-.index__button:hover{
-    font-size: 150%;
-    background-color: #450391;
-    border: none;
-}
+    .index__button{
+        font-size: 140%;
+        background-color: #692dad;
+        border: none;
+    }
 
-video{
-    border-radius: 1%;
-}
+    .index__button:hover{
+        font-size: 150%;
+        background-color: #450391;
+        border: none;
+    }
 
-.video__title{
-    color: #ffffff;
-    font-weight: 700;
-    font-size: xxx-large;
-    border-top: white solid 0.5rem;
-    border-bottom: white solid 0.5rem;
-    overflow: hidden;
-    background: linear-gradient(to right, midnightblue, midnightblue 50%, white 50%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 200% 100%;
-    background-position: 100%;
-    transition: background-position 1s ease;
+.video-section{
+    margin-top: 10rem;
 }
+    video{
+        border-radius: 1%;
+    }
 
-.video__title:hover{
-    background-position: 0 100%;
-}
+    .video__title{
+        color: #ffffff;
+        font-weight: 700;
+        font-size: xxx-large;
+        border-top: white solid 0.5rem;
+        border-bottom: white solid 0.5rem;
+        overflow: hidden;
+        background: linear-gradient(to right, midnightblue, midnightblue 50%, white 50%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 200% 100%;
+        background-position: 100%;
+        transition: background-position 1s ease;
+    }
+
+    .video__title:hover{
+        background-position: 0 100%;
+    }
 
 /* FOOTER */
 
@@ -104,6 +109,7 @@ footer{
     background-image: url(./images/scotland.jpg);
     background-position: bottom;
     color: ghostwhite;
+    margin-top: 10rem;
 }
 
     .footer__logoChico{
@@ -141,9 +147,8 @@ footer{
     background-size: cover;
 }
 
-.mainContent__content{
-    margin-top: 5rem;
-    height: fit-content;
+.mainContent{
+    margin-top: 8rem;
 }
 
 .mainContent__text--frame{
@@ -195,52 +200,52 @@ footer{
     background-size: cover;
 }
 
-.price-table{
-    margin-top: 5.5rem;
-    width: fit-content;
-    height: fit-content;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 0rem;
-}
+    .price-table{
+        margin-top: 5.5rem;
+        width: fit-content;
+        height: fit-content;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        padding: 0rem;
+    }
 
-th, .price-table__title{
-    text-shadow:#44315D 1px 1px 1px;
-}
+    th, .price-table__title{
+        text-shadow:#44315D 1px 1px 1px;
+    }
 
-td{
-    padding: 0 10px 0 10px;
-}
+    td{
+        padding: 0 10px 0 10px;
+    }
 
-.price-table__tbody1{
-    background: rgb(179, 144, 144);
-}
-.price-table__tbody2{
-    background: rgb(197, 132, 159);
-}
-.price-table__tbody3{
-    background: rgb(202, 93, 216);
-}
-.price-table__tbody4{
-    background: rgb(145, 59, 202);
-}
-.price-table__tbody5{
-    background: rgb(85, 44, 231);
-}
+    .price-table__tbody1{
+        background: rgb(179, 144, 144);
+    }
+    .price-table__tbody2{
+        background: rgb(197, 132, 159);
+    }
+    .price-table__tbody3{
+        background: rgb(202, 93, 216);
+    }
+    .price-table__tbody4{
+        background: rgb(145, 59, 202);
+    }
+    .price-table__tbody5{
+        background: rgb(85, 44, 231);
+    }
 
-.price-table__number{
-    text-align: right;
-    width: 9rem;
-    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
-}
+    .price-table__number{
+        text-align: right;
+        width: 9rem;
+        padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    }
 
-.price-table__text{
-    padding: 0.5rem;
-}
+    .price-table__text{
+        padding: 0.5rem;
+    }
 
-.price-table__link--hover:hover{
-    color: rgb(197, 132, 159);
-}
+    .price-table__link--hover:hover{
+        color: rgb(197, 132, 159);
+    }
 
 
 
@@ -272,22 +277,22 @@ legend{
 
 fieldset{
     padding-bottom: 10px;
-    width: 50%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     border-radius: 2%;
 }
 
 .form__fieldset1{
-    background: linear-gradient(to bottom, rgb(234, 171, 247), rgb(201, 105, 145));
+    background: linear-gradient(to right, rgba(35, 221, 235, .6), rgba(145, 59, 202, .6));
     padding: 1rem;
 }
 .form__fieldset2{
-    background: linear-gradient(to bottom, rgb(204, 114, 216), rgb(132, 58, 206));
+    background: linear-gradient(to right, rgba(35, 221, 235, .6), rgba(145, 59, 202, .6));
     padding: 1rem;
 }
 .form__fieldset3{
-    background: linear-gradient(to bottom, rgb(118, 32, 189), rgb(145, 59, 202));
+    background: linear-gradient(to right, rgba(35, 221, 235, .6), rgba(145, 59, 202, .6));
     padding: 1rem;
 }
 
@@ -303,7 +308,7 @@ legend{
     background-color: white;
     border-radius: 10px;
     padding: 0.1rem 0.5rem 0.1rem 0.5rem;
-    width: 10rem;
+    width: 12rem;
     display: flex;
     justify-content: center;
 }
@@ -338,6 +343,7 @@ legend{
     color: #692dad;
     width: 4rem;
     height: 2rem;
+    line-height: normal;
 }
 
 #submit{
@@ -345,6 +351,7 @@ legend{
     color: white;
     width: 4rem;
     height: 2rem;
+    line-height: normal;
 }
 
 
