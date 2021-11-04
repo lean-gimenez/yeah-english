@@ -1,0 +1,45 @@
+/******************* ABOUT LEAN *******************/
+
+@mixin about-images($pic-path) {
+    background-image: url($pic-path);
+    background-repeat: no-repeat;
+    width: 15rem;
+    height: 8rem;
+    background-position: center center;
+    background-size: cover;
+    
+}
+
+.about__body{
+    background-image: url(./images/england.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mainContent{
+    margin-top: 8rem;
+
+    .mainContent__text--frame{
+        color: white;
+        background: linear-gradient(to right, rgba(35, 221, 235, .6), rgba(145, 59, 202, .6));
+        background-color: rgba(0,0,0,.8);
+        padding: 2rem;
+        border-radius: 1%;
+        text-align: justify;
+    }
+    
+    #pic1{
+        @include about-images("./images/class.jpg");
+    }
+    
+    #pic2{
+        @include about-images("./images/classes.jpg");
+    }
+    
+    #pic3{
+        @include about-images("./images/classroom.jpg");
+    }
+}
+
+

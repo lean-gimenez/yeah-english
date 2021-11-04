@@ -1,0 +1,81 @@
+/**************************** INDEX ****************************/
+
+.index__body{
+    background-image: url(./images/ireland.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar-brand{
+    font-family: Sacramento, PT Sans, sans-serif;
+    font-weight: 500;
+    font-size: xx-large;
+}
+
+/* BANNER */
+
+.banner{
+    margin-top: 6rem;
+
+    .banner__text{
+        font-size: 5rem;
+        line-height: 7rem;
+        font-weight: 500;
+        color: white;
+        text-shadow: #44315D 0 6rem 0.8rem;
+    }
+
+    .banner__longertext{
+        background-color: rgba(255, 255, 255, .6);
+        border-radius: 2%;
+        height: fit-content;
+        padding: 2rem;
+        margin-top: 10rem;
+
+        .banner__p{
+            font-size: large;
+        }
+
+        .index__button{
+            font-size: 140%;
+            background-color: #692dad;
+            border: none;
+        }
+    
+        .index__button:hover{
+            font-size: 150%;
+            background-color: #450391;
+            border: none;
+        }
+    }
+}
+
+.video-section{
+    margin-top: 10rem;
+
+    .video__title{
+        color: #ffffff;
+        font-weight: 700;
+        font-size: xx-large;
+        width: 100vw;
+        border-top: white solid 0.5rem;
+        border-bottom: white solid 0.5rem;
+        overflow: hidden;
+        background: linear-gradient(to right, midnightblue, midnightblue 50%, white 50%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 200% 100%;
+        background-position: 100%;
+        transition: background-position 1s ease;
+    }
+
+    .video__title:hover{
+        background-position: 0 100%;
+    }
+
+    video{
+        border-radius: 1%;
+    }
+}
