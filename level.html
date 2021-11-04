@@ -40,9 +40,107 @@
         </nav>
     </header>
 
-    <section class="container">
-        <div>LEVEL</div>
+    
+    <!-- LEVEL TEST -->
+
+    <section class="container mainContent-contact">
+        <form action="#" class="d-flex d-flex flex-column align-items-center">
+
+            <!-- PERSONAL DATA -->
+            <fieldset class="levelForm__fieldset">
+                <legend> Who's taking the test? </legend>
+                <div class="levelForm__innerfield">
+                    <label for="name" class="levelForm__label"><h5>Your name</h5></label>
+                    <input id="name" class="contact" type="text" name="name" placeholder="Full name">
+                    <label for="email"><h5>Your e-mail</h5></label>
+                    <input id="email" class="contact" type="email" name="mail">
+                    </select>
+                </div>
+            </fieldset>
+            
+            <!-- Q1 -->
+            <fieldset class="levelForm__fieldset">
+                <legend class="align-self-center"> Question 1</legend>
+
+                <h5>Mary ____ to learn English.</h5>
+                    <select id="level" name="level">
+                        <option value="nothing">Choose an option</option>
+                        <option value="n/a">want</option>
+                        <option value="1">wanting</option>
+                        <option value="2">what</option>
+                        <option value="3">wants</option>
+                    </select>
+            </fieldset>
+
+            <!-- Q2 -->
+            <fieldset class="levelForm__fieldset">
+                <legend class="align-self-center">Question 2</legend>
+
+                <h5>Where ____ you go last holidays?</h5>
+                    <select id="level" name="level">
+                        <option value="nothing">Choose an option</option>
+                        <option value="n/a">have</option>
+                        <option value="1">does</option>
+                        <option value="2">did</option>
+                        <option value="3">has</option>
+                    </select>
+            </fieldset>
+
+            <!-- Q3 -->
+            <fieldset class="levelForm__fieldset">
+                <legend class="align-self-center">Question 3</legend>
+
+                <h5>I can't ____ listening to politicians!</h5>
+                    <select id="level" name="level">
+                        <option value="nothing">Choose an option</option>
+                        <option value="n/a">I don't know</option>
+                        <option value="ele">stand</option>
+                        <option value="pre">helped</option>
+                        <option value="int">don't</option>
+                        <option value="upper">understand</option>
+                    </select>
+            </fieldset>
+
+            <!-- Q4 -->
+            <fieldset class="levelForm__fieldset">
+                <legend class="align-self-center">Question 4</legend>
+                
+                <div class="levelForm__innerfield">
+                    <h5>Write a paragraph talking about yourself.</h5>
+                    <textarea name="consult" id="textarea" cols="50" rows="5" maxlength="500" placeholder="Write here - max. 500 characters"></textarea>
+                </div>
+            </fieldset>
+
+            <!-- Q5 -->
+            <fieldset class="levelForm__fieldset">
+                <legend class="align-self-center">Question 5</legend>
+                <h5>I ____ to live in London.</h5>
+                <h6>(More than one answer is possible)</h6>
+                <div class="levelForm__innerfield label levelForm__checkbox">
+                    <div class="levelForm__checkboxText">
+                        <input type="checkbox"> would like to
+                    </div>
+                    <div class="levelForm__checkboxText">
+                        <input type="checkbox"> prefer
+                    </div>
+                    <div class="levelForm__checkboxText">
+                        <input type="checkbox"> hope
+                    </div>
+                    <div class="levelForm__checkboxText">
+                        <input type="checkbox"> am going
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- BOTONES -->
+
+            <div class="levelForm__botones d-flex justify-content-start">
+                <input type="submit" value="Send" class="levelForm__submit btn">
+                <input type="reset" value="Clear" class="levelForm__reset btn">
+            </div>
+        </form>
     </section>
+
 
     <!-- FOOTER -->
     <footer class="container-fluid"> 

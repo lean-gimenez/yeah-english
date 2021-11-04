@@ -47,7 +47,7 @@
         <form action="#" class="d-flex d-flex flex-column align-items-center">
 
             <!-- CAMPO 1 -->
-            <fieldset class="form__fieldset1">
+            <fieldset class="form__fieldset">
                 <legend> Hello, stranger! </legend>
                 <div class="form__innerfield">
                     <label for="name" class="label">Your name</label>
@@ -68,7 +68,7 @@
             </fieldset>
             
             <!-- CAMPO 2 -->
-            <fieldset class="form__fieldset2">
+            <fieldset class="form__fieldset">
                 <legend>Talk to me!</legend>
                 <div class="form__innerfield">
                     <textarea name="consult" id="textarea" cols="50" rows="5" placeholder="Write your doubts here."></textarea>
@@ -76,7 +76,7 @@
             </fieldset>
 
             <!-- CAMPO 3 -->
-            <fieldset class="form__fieldset3">
+            <fieldset class="form__fieldset">
                 <legend>Would you like to...</legend>
                 <div class="form__innerfield label form__checkbox">
                     <div class="form__checkboxText">
@@ -94,8 +94,8 @@
             <!-- BOTONES -->
 
             <div class="form__botones d-flex justify-content-start">
-                <input type="submit" value="Send" id="submit" class="btn btn-primary row contact__button">
-                <input type="reset" value="Clear" id="reset" class="btn btn-primary row contact__button">
+                <input type="submit" value="Send" class="btn contact__button form__submit">
+                <input type="reset" value="Clear" class="btn contact__button form__reset">
             </div>
         </form>
     </section>
