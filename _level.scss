@@ -1,5 +1,8 @@
 /******************* LEVEL *******************/
 
+.level__body{
+    @include body("../images/hebrides.jpg");
+}
 
 .levelForm__fieldset{
     width: 90%;

@@ -1,45 +1,81 @@
 /******************* CONTACT *******************/
 
 .contact__body{
-    background-image: url(./images/yellowstone.jpg);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include body("../images/yellowstone.jpg");
 }
 
 .mainContent-contact{
     margin-top: 6rem;
-}
 
-form{
-    margin-left: 10px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
-    margin-bottom: 5rem;
+    form{
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        margin-bottom: 5rem;
+
+        .form__fieldset{
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            border-radius: 2%;
+            background: linear-gradient(to right, rgba(35, 221, 235, .6), rgba(145, 59, 202, .6));
+            padding: 1rem;
+
+            
+            .form__innerfield{
+                margin: 0.5rem;
+                display: flex;
+                flex-direction: column;
+
+                .label{
+                    font-size: 90%;
+                }
+
+                .form__checkbox{
+                    padding-top: 0.5rem;
+                    display: flex;
+                    flex-direction: column;
+
+                    .form__checkboxText{
+                        display: flex;
+                        flex-direction: row;
+                        column-gap: 0.2rem;
+                    }
+                }
+            }
+        }
+
+        .form__botones{
+            display: flex;
+            flex-direction: row;
+            column-gap: 2.5rem;
+            font-size: large;
+            border: none;
+            padding: 1rem;
+
+            .form__reset{
+                background-color: white;
+                color: #692dad;
+                width: 4rem;
+                height: 2rem;
+                line-height: normal;
+            }
+    
+            .form__submit{
+                background-color: #692dad;
+                color: white;
+                width: 4rem;
+                height: 2rem;
+                line-height: normal;
+            }
+        }
+    }
 }
 
 legend{
     margin-left: 0.2rem;
     font-weight: 600;
-}
-
-.form__fieldset{
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    border-radius: 2%;
-    background: linear-gradient(to right, rgba(35, 221, 235, .6), rgba(145, 59, 202, .6));
-    padding: 1rem;
-}
-
-.form__innerfield{
-    margin: 0.5rem;
-    display: flex;
-    flex-direction: column;
-}
-
-legend{
     font-size: 120%;
     box-shadow: 0.2rem 0.2rem 0.2rem rgb(98, 68, 102);
     background-color: white;
@@ -49,46 +85,3 @@ legend{
     display: flex;
     justify-content: center;
 }
-
-.label{
-    font-size: 90%;
-}
-
-.form__checkbox{
-    padding-top: 0.5rem;
-    display: flex;
-    flex-direction: column;
-}
-
-.form__checkboxText{
-    display: flex;
-    flex-direction: row;
-    column-gap: 0.2rem;
-}
-
-.form__botones{
-    display: flex;
-    flex-direction: row;
-    column-gap: 2.5rem;
-    font-size: large;
-    border: none;
-    padding: 1rem;
-}
-
-.form__reset{
-    background-color: white;
-    color: #692dad;
-    width: 4rem;
-    height: 2rem;
-    line-height: normal;
-}
-
-.form__submit{
-    background-color: #692dad;
-    color: white;
-    width: 4rem;
-    height: 2rem;
-    line-height: normal;
-}
-
-

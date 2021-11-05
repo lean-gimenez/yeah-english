@@ -11,10 +11,7 @@
 }
 
 .about__body{
-    background-image: url(./images/england.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include body("../images/england.jpg");
 }
 
 .mainContent{
@@ -30,15 +27,15 @@
     }
     
     #pic1{
-        @include about-images("./images/class.jpg");
+        @include about-images("../images/england.jpg");
     }
     
     #pic2{
-        @include about-images("./images/classes.jpg");
+        @include about-images("../images/classes.jpg");
     }
     
     #pic3{
-        @include about-images("./images/classroom.jpg");
+        @include about-images("../images/classroom.jpg");
     }
 }
 

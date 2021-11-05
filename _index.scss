@@ -1,10 +1,7 @@
 /**************************** INDEX ****************************/
 
 .index__body{
-    background-image: url(./images/ireland.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include body("../images/ireland.jpg")
 }
 
 .navbar-brand{

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>Level!</title>
 </head>
-<body class="index__body text">
+<body class="level__body text">
     
     <!--HEADER-->
     <header>
@@ -44,11 +44,11 @@
     <!-- LEVEL TEST -->
 
     <section class="container mainContent-contact">
-        <form action="#" class="d-flex d-flex flex-column align-items-center">
+        <form action="#" class="d-flex d-flex flex-column align-items-center" id="levelForm">
 
             <!-- PERSONAL DATA -->
             <fieldset class="levelForm__fieldset">
-                <legend> Who's taking the test? </legend>
+                <legend class="align-self-center"> How you doin'? </legend>
                 <div class="levelForm__innerfield">
                     <label for="name" class="levelForm__label"><h5>Your name</h5></label>
                     <input id="name" class="contact" type="text" name="name" placeholder="Full name">
@@ -135,7 +135,7 @@
             <!-- BOTONES -->
 
             <div class="levelForm__botones d-flex justify-content-start">
-                <input type="submit" value="Send" class="levelForm__submit btn">
+                <input id="submit" type="submit" value="Send" class="levelForm__submit btn">
                 <input type="reset" value="Clear" class="levelForm__reset btn">
             </div>
         </form>
@@ -161,7 +161,8 @@
     </footer>
 
 
-
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="level.js"></script>
 </body>
 </html>

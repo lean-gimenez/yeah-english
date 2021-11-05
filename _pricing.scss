@@ -2,27 +2,24 @@
 /******************* PRICING *******************/
 
 .pricing__body{
-    background-image: url(./images/wales.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include body("../images/wales.jpg");
 }
 
-    .price-table{
-        margin-top: 5.5rem;
-        width: fit-content;
-        height: fit-content;
-        color: rgb(0, 0, 0);
-        text-align: center;
-        padding: 0rem;
-    }
+.price-table{
+    margin-top: 5.5rem;
+    width: fit-content;
+    height: fit-content;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 0rem;
+
 
     th, .price-table__title{
         text-shadow:#44315D 1px 1px 1px;
     }
 
-    td{
-        padding: 0 10px 0 10px;
+    .price-table__text{
+        padding: 0.5rem;
     }
 
     .price-table__tbody1{
@@ -41,19 +38,17 @@
         background: rgb(85, 44, 231);
     }
 
-    .price-table__number{
-        text-align: right;
-        width: 9rem;
-        padding: 0.2rem 0.5rem 0.2rem 0.5rem;
-    }
+    td{
+        padding: 0 10px 0 10px;
 
-    .price-table__text{
-        padding: 0.5rem;
+        .price-table__number{
+            text-align: right;
+            width: 9rem;
+            padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+        }
     }
-
+    
     .price-table__link--hover:hover{
         color: rgb(197, 132, 159);
     }
-
-
-
+}

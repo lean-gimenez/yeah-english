@@ -4,6 +4,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 
 
+@mixin body($pic-path) {
+    background-image: url($pic-path);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .text{
     font-family: PT Sans, sans-serif;
@@ -23,11 +29,12 @@ ul, ol{
     box-shadow: #44315D 0.1rem 0.1rem 0.5rem;
 }
 
+
 /* FOOTER */
 
 footer{
     background-color: #44315D;
-    background-image: url(./images/scotland.jpg);
+    background-image: url(../images/scotland.jpg);
     background-position: bottom;
     color: ghostwhite;
     margin-top: 10rem;
