@@ -1,0 +1,23 @@
+.siteMap__body{
+    @include body("../images/newzealand.jpg");
+}
+
+.map{
+    margin-top: 10rem;
+
+    .map__linkset{
+        margin-top: 2rem;
+
+        .map__links:hover{
+            overflow: hidden;
+            background: linear-gradient(to left, black 50% #faf8fa 50%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 200% 200%;
+            background-position: 100%;
+            transition: background-position 700ms ease;
+        }
+    
+    }
+}

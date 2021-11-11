@@ -1,6 +1,13 @@
 /* GENERAL */
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .text {
   font-family: PT Sans, sans-serif;
 }
@@ -172,31 +179,32 @@ footer .footer__navbar {
   text-align: justify;
 }
 
+.mainContent .pics {
+  margin: 2rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .mainContent #pic1 {
-  background-image: url("../images/england.jpg");
-  background-repeat: no-repeat;
   width: 15rem;
   height: 8rem;
-  background-position: center center;
-  background-size: cover;
+  margin: 1rem;
+  border: white solid 2px;
 }
 
 .mainContent #pic2 {
-  background-image: url("../images/classes.jpg");
-  background-repeat: no-repeat;
   width: 15rem;
   height: 8rem;
-  background-position: center center;
-  background-size: cover;
+  margin: 1rem;
+  border: white solid 2px;
 }
 
 .mainContent #pic3 {
-  background-image: url("../images/classroom.jpg");
-  background-repeat: no-repeat;
   width: 15rem;
   height: 8rem;
-  background-position: center center;
-  background-size: cover;
+  margin: 1rem;
+  border: white solid 2px;
 }
 
 /******************* LEVEL *******************/
@@ -490,5 +498,33 @@ legend {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.siteMap__body {
+  background-image: url("../images/newzealand.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.map {
+  margin-top: 10rem;
+}
+
+.map .map__linkset {
+  margin-top: 2rem;
+}
+
+.map .map__linkset .map__links:hover {
+  overflow: hidden;
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, black));
+  background: linear-gradient(to left, black 50% #faf8fa 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 200%;
+  background-position: 100%;
+  -webkit-transition: background-position 700ms ease;
+  transition: background-position 700ms ease;
 }
 /*# sourceMappingURL=styles.css.map */

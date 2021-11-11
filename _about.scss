@@ -1,13 +1,10 @@
 /******************* ABOUT LEAN *******************/
 
-@mixin about-images($pic-path) {
-    background-image: url($pic-path);
-    background-repeat: no-repeat;
+@mixin about-images{
     width: 15rem;
     height: 8rem;
-    background-position: center center;
-    background-size: cover;
-    
+    margin: 1rem;
+    border: white solid 2px;
 }
 
 .about__body{
@@ -25,17 +22,22 @@
         border-radius: 1%;
         text-align: justify;
     }
+
+    .pics{
+        margin: 2rem;
+        justify-content: space-between;
+    }
     
     #pic1{
-        @include about-images("../images/england.jpg");
+        @include about-images();
     }
     
     #pic2{
-        @include about-images("../images/classes.jpg");
+        @include about-images();
     }
     
     #pic3{
-        @include about-images("../images/classroom.jpg");
+        @include about-images();
     }
 }
 
