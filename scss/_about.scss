@@ -1,10 +1,20 @@
 /******************* ABOUT LEAN *******************/
 
 @mixin about-images{
-    width: 15rem;
-    height: 8rem;
+    $pic-width: 15rem;
+    $pic-height: 9rem;
+    width: $pic-width;
+    height: $pic-height;
     margin: 1rem;
     border: white solid 2px;
+    transition-timing-function: ease-in-out;
+    transition-delay: 500ms;
+
+    &:hover{
+        transition-duration: 2s;
+        width: $pic-width*1.5;
+        height: $pic-height*1.5;
+    }
 }
 
 .about__body{
@@ -14,17 +24,17 @@
 .mainContent{
     margin-top: 8rem;
 
-    .mainContent__text--frame{
+    &__text--frame{
         color: white;
         background: linear-gradient(to right, rgba(35, 221, 235, .6), rgba(145, 59, 202, .6));
         background-color: rgba(0,0,0,.8);
         padding: 2rem;
-        border-radius: 1%;
+        border-radius: 1rem;
         text-align: justify;
+        height: fit-content;
     }
 
     .pics{
-        margin: 2rem;
         justify-content: space-between;
     }
     
@@ -34,6 +44,7 @@
     
     #pic2{
         @include about-images();
+        margin-left: 1rem;
     }
     
     #pic3{

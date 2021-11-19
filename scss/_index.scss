@@ -1,0 +1,126 @@
+/**************************** INDEX ****************************/
+
+.index__body{
+    @include body("../images/ireland.jpg")
+}
+
+.navbar-brand{
+    font-family: Sacramento, PT Sans, sans-serif;
+    font-weight: 500;
+    font-size: xx-large;
+}
+
+/* BANNER */
+
+.banner{
+    margin-top: 8rem;
+
+    &__text{
+        font-size: 5rem;
+        line-height: 7rem;
+        font-weight: 500;
+        color: white;
+        text-shadow: #44315D 0 6rem 0.8rem;
+    }
+
+    &__longertext{
+        background-color: rgba(255, 255, 255, .6);
+        border-radius: 1rem;
+        width: 25rem;
+        height: fit-content;
+        padding: 2rem;
+        margin-top: 7rem;
+
+        .banner__p{
+            font-size: large;
+        }
+
+        .index__button{
+            font-size: 140%;
+            background-color: #692dad;
+            border: none;
+
+            &:hover{
+                font-size: 150%;
+                background-color: #450391;
+                border: none;
+            }
+        }
+    }
+}
+
+.video-section{
+    margin-top: 5rem;
+
+    .video__title{
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 3.33rem;
+        width: 100vw;
+        border-top: white solid 0.5rem;
+        border-bottom: white solid 0.5rem;
+        overflow: hidden;
+        background: linear-gradient(to right, #450391 50%, white 50%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 200% 100%;
+        background-position: 100%;
+        transition: background-position 1s ease;
+    
+
+        &:hover{
+            background-position: 0 100%;
+        }
+    }
+
+    video{
+        border-radius: 1%;
+    }
+}
+
+.qualities{
+    margin: 5rem 0 5rem 0;
+
+    &__chart{
+        $pic-width: 22rem;
+        $pic-height: 8rem;
+        padding: 1.5rem;
+        width: $pic-width;
+        height: $pic-height;
+        background: linear-gradient(to right, rgb(35, 221, 235), rgb(145, 59, 202));
+        text-shadow: #44315D 0.1rem 0.1rem 0.5rem;
+        margin: 1rem;
+        border-radius: 1rem;
+        text-align: center;
+
+        & h2{
+            font-size: 2rem;
+        }
+
+        &:hover{
+            transition-duration: 1s;
+            width: $pic-width*1.15;
+            height: $pic-height*1.15;
+        }
+    }
+}
+
+
+/********************************** BIGGER SCREEN **********************************/
+
+@media screen and (min-width: 768px) {
+    .index-table{
+        width: 45rem;
+    }
+
+    .banner__longertext{
+        background-color: rgba(255, 255, 255, .6);
+        border-radius: 1rem;
+        width: 50rem;
+        height: fit-content;
+        padding: 2rem;
+        margin-top: 6rem;
+        
+    }
+}

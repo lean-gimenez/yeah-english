@@ -15,6 +15,11 @@
 a {
   outline: none;
   text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #e329fc;
 }
 
 ul, ol {
@@ -28,17 +33,141 @@ ul, ol {
           box-shadow: #44315D 0.1rem 0.1rem 0.5rem;
 }
 
+/********* FORM *********/
+.form {
+  margin-top: 8rem;
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 1rem;
+  margin-bottom: 5rem;
+}
+
+.form__title {
+  text-shadow: #44315D 1px 1px 1px;
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.form__fieldset {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 1rem;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(35, 221, 235, 0.6)), to(rgba(145, 59, 202, 0.6)));
+  background: linear-gradient(to right, rgba(35, 221, 235, 0.6), rgba(145, 59, 202, 0.6));
+  padding: 1rem;
+}
+
+.form__fieldset__legend {
+  margin-left: 0.2rem;
+  font-weight: 600;
+  font-size: 120%;
+  -webkit-box-shadow: 0.2rem 0.2rem 0.2rem #624466;
+          box-shadow: 0.2rem 0.2rem 0.2rem #624466;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+  width: 12rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form__fieldset__innerfield {
+  margin: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form__fieldset__innerfield__label {
+  font-size: 90%;
+}
+
+.form__fieldset__checkbox {
+  padding-top: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form__fieldset__checkboxcheckboxText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: 0.2rem;
+          column-gap: 0.2rem;
+}
+
+.form__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: 2.5rem;
+          column-gap: 2.5rem;
+  font-size: large;
+  border: none;
+  padding: 1rem;
+}
+
+.form__buttons__submit {
+  background-color: #692dad;
+  color: white;
+  width: 4rem;
+  height: 2rem;
+  line-height: normal;
+}
+
+.form__buttons__reset {
+  background-color: white;
+  color: #692dad;
+  width: 4rem;
+  height: 2rem;
+  line-height: normal;
+}
+
 /* FOOTER */
-footer {
+.footer {
   background-color: #44315D;
   background-image: url(../images/scotland.jpg);
   background-position: bottom;
   color: ghostwhite;
-  margin-top: 10rem;
-  width: 100vw;
+  margin-top: 3rem;
 }
 
-footer .footer__logoChico {
+.footer__logoChico {
   color: white;
   font-family: Sacramento, PT Sans, sans-serif;
   font-weight: 400;
@@ -52,14 +181,22 @@ footer .footer__logoChico {
   margin: 1rem 0 0 1rem;
 }
 
-footer .footer__navbar {
-  margin: 1rem 0 1rem 1rem;
+.footer__navbar {
+  margin: 1rem 0 1rem 0rem;
   line-height: 1.4rem;
   display: inline-block;
 }
 
-.footer__navbar .footer__list .footer__list-item:hover, .prices__link--hover:hover, .mainContent__link--hover:hover {
-  color: #d58f3f;
+.footer__list-item {
+  color: white;
+}
+
+.footer__iconos {
+  margin-top: 1rem;
+}
+
+.footer__icon {
+  padding: 0 0.5rem 0 0.5rem;
 }
 
 /********************************** BIGGER SCREEN **********************************/
@@ -89,10 +226,10 @@ footer .footer__navbar {
 
 /* BANNER */
 .banner {
-  margin-top: 6rem;
+  margin-top: 8rem;
 }
 
-.banner .banner__text {
+.banner__text {
   font-size: 5rem;
   line-height: 7rem;
   font-weight: 500;
@@ -100,46 +237,47 @@ footer .footer__navbar {
   text-shadow: #44315D 0 6rem 0.8rem;
 }
 
-.banner .banner__longertext {
+.banner__longertext {
   background-color: rgba(255, 255, 255, 0.6);
-  border-radius: 2%;
+  border-radius: 1rem;
+  width: 25rem;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   padding: 2rem;
-  margin-top: 10rem;
+  margin-top: 7rem;
 }
 
-.banner .banner__longertext .banner__p {
+.banner__longertext .banner__p {
   font-size: large;
 }
 
-.banner .banner__longertext .index__button {
+.banner__longertext .index__button {
   font-size: 140%;
   background-color: #692dad;
   border: none;
 }
 
-.banner .banner__longertext .index__button:hover {
+.banner__longertext .index__button:hover {
   font-size: 150%;
   background-color: #450391;
   border: none;
 }
 
 .video-section {
-  margin-top: 10rem;
+  margin-top: 5rem;
 }
 
 .video-section .video__title {
   color: #ffffff;
-  font-weight: 700;
-  font-size: xx-large;
+  font-weight: 600;
+  font-size: 3.33rem;
   width: 100vw;
   border-top: white solid 0.5rem;
   border-bottom: white solid 0.5rem;
   overflow: hidden;
-  background: -webkit-gradient(linear, left top, right top, from(midnightblue), color-stop(50%, midnightblue), color-stop(50%, white));
-  background: linear-gradient(to right, midnightblue, midnightblue 50%, white 50%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #450391), color-stop(50%, white));
+  background: linear-gradient(to right, #450391 50%, white 50%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -157,6 +295,50 @@ footer .footer__navbar {
   border-radius: 1%;
 }
 
+.qualities {
+  margin: 5rem 0 5rem 0;
+}
+
+.qualities__chart {
+  padding: 1.5rem;
+  width: 22rem;
+  height: 8rem;
+  background: -webkit-gradient(linear, left top, right top, from(#23ddeb), to(#913bca));
+  background: linear-gradient(to right, #23ddeb, #913bca);
+  text-shadow: #44315D 0.1rem 0.1rem 0.5rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.qualities__chart h2 {
+  font-size: 2rem;
+}
+
+.qualities__chart:hover {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  width: 25.3rem;
+  height: 9.2rem;
+}
+
+/********************************** BIGGER SCREEN **********************************/
+@media screen and (min-width: 768px) {
+  .index-table {
+    width: 45rem;
+  }
+  .banner__longertext {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 1rem;
+    width: 50rem;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 2rem;
+    margin-top: 6rem;
+  }
+}
+
 /******************* ABOUT LEAN *******************/
 .about__body {
   background-image: url("../images/england.jpg");
@@ -169,18 +351,20 @@ footer .footer__navbar {
   margin-top: 8rem;
 }
 
-.mainContent .mainContent__text--frame {
+.mainContent__text--frame {
   color: white;
   background: -webkit-gradient(linear, left top, right top, from(rgba(35, 221, 235, 0.6)), to(rgba(145, 59, 202, 0.6)));
   background: linear-gradient(to right, rgba(35, 221, 235, 0.6), rgba(145, 59, 202, 0.6));
   background-color: rgba(0, 0, 0, 0.8);
   padding: 2rem;
-  border-radius: 1%;
+  border-radius: 1rem;
   text-align: justify;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .mainContent .pics {
-  margin: 2rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -188,23 +372,57 @@ footer .footer__navbar {
 
 .mainContent #pic1 {
   width: 15rem;
-  height: 8rem;
+  height: 9rem;
   margin: 1rem;
   border: white solid 2px;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transition-delay: 500ms;
+          transition-delay: 500ms;
+}
+
+.mainContent #pic1:hover {
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+  width: 22.5rem;
+  height: 13.5rem;
 }
 
 .mainContent #pic2 {
   width: 15rem;
-  height: 8rem;
+  height: 9rem;
   margin: 1rem;
   border: white solid 2px;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transition-delay: 500ms;
+          transition-delay: 500ms;
+  margin-left: 1rem;
+}
+
+.mainContent #pic2:hover {
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+  width: 22.5rem;
+  height: 13.5rem;
 }
 
 .mainContent #pic3 {
   width: 15rem;
-  height: 8rem;
+  height: 9rem;
   margin: 1rem;
   border: white solid 2px;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transition-delay: 500ms;
+          transition-delay: 500ms;
+}
+
+.mainContent #pic3:hover {
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+  width: 22.5rem;
+  height: 13.5rem;
 }
 
 /******************* LEVEL *******************/
@@ -215,99 +433,17 @@ footer .footer__navbar {
   background-size: cover;
 }
 
-.levelForm__fieldset {
-  width: 90%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border-radius: 2%;
-  background: linear-gradient(45deg, rgba(222, 235, 35, 0.8), rgba(59, 150, 202, 0.8));
+#results {
+  background: -webkit-gradient(linear, left top, right top, from(#23ddeb), to(#913bca));
+  background: linear-gradient(to right, #23ddeb, #913bca);
+  border-radius: 1rem;
+  color: white;
+}
+
+#results h2 {
   padding: 1rem;
-}
-
-.levelForm__innerfield {
-  margin: 0.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.levelForm__legend {
-  font-size: 120%;
-  -webkit-box-shadow: 0.2rem 0.2rem 0.2rem #624466;
-          box-shadow: 0.2rem 0.2rem 0.2rem #624466;
-  background-color: white;
-  border-radius: 10px;
-  padding: 0.1rem 0.5rem 0.1rem 0.5rem;
-  width: 12rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.levelForm__checkbox {
-  padding-top: 0.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.levelForm__checkboxText {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-column-gap: 0.2rem;
-          column-gap: 0.2rem;
-}
-
-.levelForm__botones {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-column-gap: 2.5rem;
-          column-gap: 2.5rem;
-  font-size: large;
-  border: none;
-  padding: 1rem;
-}
-
-.levelForm__submit {
-  background-color: #3b96ca;
-  color: #ffffff;
-  width: 4rem;
-  height: 2rem;
-  line-height: normal;
-}
-
-.levelForm__reset {
-  background-color: #ffffff;
-  color: #3b96ca;
-  width: 4rem;
-  height: 2rem;
-  line-height: normal;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 /******************* PRICING *******************/
@@ -319,7 +455,7 @@ footer .footer__navbar {
 }
 
 .price-table {
-  margin-top: 5.5rem;
+  margin-top: 8rem;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -331,36 +467,43 @@ footer .footer__navbar {
   padding: 0rem;
 }
 
-.price-table th, .price-table .price-table__title {
+.price-table__title {
   text-shadow: #44315D 1px 1px 1px;
-}
-
-.price-table .price-table__text {
+  color: white;
   padding: 0.5rem;
+  text-align: center;
+  font-size: 3rem;
 }
 
-.price-table .price-table__tbody1 {
-  background: #b39090;
+.price-table__pretable {
+  line-height: 1rem;
+  padding: 2rem;
+  font-size: large;
+  font-style: italic;
+  font-weight: bold;
 }
 
-.price-table .price-table__tbody2 {
-  background: #c5849f;
+.price-table__text {
+  color: white;
 }
 
-.price-table .price-table__tbody3 {
-  background: #ca5dd8;
+.price-table__tbody {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(35, 221, 235, 0.6)), to(rgba(145, 59, 202, 0.6)));
+  background: linear-gradient(to right, rgba(35, 221, 235, 0.6), rgba(145, 59, 202, 0.6));
+  border-bottom: #3f3f3f 1px solid;
 }
 
-.price-table .price-table__tbody4 {
-  background: #913bca;
+.price-table__link--hover:hover {
+  color: #c5849f;
 }
 
-.price-table .price-table__tbody5 {
-  background: #552ce7;
+.price-table th {
+  text-shadow: #44315D 1px 1px 1px;
+  font-size: x-large;
 }
 
 .price-table td {
-  padding: 0 10px 0 10px;
+  padding: 0.25rem 1rem 0.25rem 1rem;
 }
 
 .price-table td .price-table__number {
@@ -369,135 +512,12 @@ footer .footer__navbar {
   padding: 0.2rem 0.5rem 0.2rem 0.5rem;
 }
 
-.price-table .price-table__link--hover:hover {
-  color: #c5849f;
-}
-
 /******************* CONTACT *******************/
 .contact__body {
   background-image: url("../images/yellowstone.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.mainContent-contact {
-  margin-top: 6rem;
-}
-
-.mainContent-contact form {
-  margin-left: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  row-gap: 1rem;
-  margin-bottom: 5rem;
-}
-
-.mainContent-contact form .form__fieldset {
-  width: 70%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border-radius: 2%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(35, 221, 235, 0.6)), to(rgba(145, 59, 202, 0.6)));
-  background: linear-gradient(to right, rgba(35, 221, 235, 0.6), rgba(145, 59, 202, 0.6));
-  padding: 1rem;
-}
-
-.mainContent-contact form .form__fieldset .form__innerfield {
-  margin: 0.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.mainContent-contact form .form__fieldset .form__innerfield .label {
-  font-size: 90%;
-}
-
-.mainContent-contact form .form__fieldset .form__innerfield .form__checkbox {
-  padding-top: 0.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.mainContent-contact form .form__fieldset .form__innerfield .form__checkbox .form__checkboxText {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-column-gap: 0.2rem;
-          column-gap: 0.2rem;
-}
-
-.mainContent-contact form .form__botones {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-column-gap: 2.5rem;
-          column-gap: 2.5rem;
-  font-size: large;
-  border: none;
-  padding: 1rem;
-}
-
-.mainContent-contact form .form__botones .form__reset {
-  background-color: white;
-  color: #692dad;
-  width: 4rem;
-  height: 2rem;
-  line-height: normal;
-}
-
-.mainContent-contact form .form__botones .form__submit {
-  background-color: #692dad;
-  color: white;
-  width: 4rem;
-  height: 2rem;
-  line-height: normal;
-}
-
-legend {
-  margin-left: 0.2rem;
-  font-weight: 600;
-  font-size: 120%;
-  -webkit-box-shadow: 0.2rem 0.2rem 0.2rem #624466;
-          box-shadow: 0.2rem 0.2rem 0.2rem #624466;
-  background-color: white;
-  border-radius: 10px;
-  padding: 0.1rem 0.5rem 0.1rem 0.5rem;
-  width: 12rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .siteMap__body {
@@ -511,20 +531,23 @@ legend {
   margin-top: 10rem;
 }
 
+.map__title {
+  text-shadow: #44315D 1px 1px 1px;
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 3rem;
+}
+
 .map .map__linkset {
   margin-top: 2rem;
 }
 
-.map .map__linkset .map__links:hover {
-  overflow: hidden;
-  background: -webkit-gradient(linear, right top, left top, color-stop(50%, black));
-  background: linear-gradient(to left, black 50% #faf8fa 50%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: 200% 200%;
-  background-position: 100%;
-  -webkit-transition: background-position 700ms ease;
-  transition: background-position 700ms ease;
+.map .map__linkset__links {
+  text-shadow: #44315D 1px 1px 1px;
+}
+
+.map .map__linkset__links:hover {
+  border-bottom: #44315D 5px solid;
 }
 /*# sourceMappingURL=styles.css.map */

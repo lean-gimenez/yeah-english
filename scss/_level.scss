@@ -1,0 +1,16 @@
+/******************* LEVEL *******************/
+
+.level__body{
+    @include body("../images/hebrides.jpg");
+}
+
+#results{
+    background: linear-gradient(to right, rgb(35, 221, 235), rgb(145, 59, 202));
+    border-radius: 1rem;
+    color: white;
+
+    & h2{
+        padding: 1rem;
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,189 @@
+/* GENERAL */
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@mixin body($pic-path) {
+    background-image: url($pic-path);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin mainTitle{
+    text-shadow:#44315D 1px 1px 1px;
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.text{
+    font-family: PT Sans, sans-serif;
+}
+
+a{
+    outline: none;
+    text-decoration: none;
+    color: white;
+
+    &:hover{
+        color: #e329fc
+
+    }
+}
+
+ul, ol{
+    list-style: none;
+}
+
+.navbar{
+    background: linear-gradient(to right, rgba(255,255,255,.9), rgba(200,200,200,.4));
+    box-shadow: #44315D 0.1rem 0.1rem 0.5rem;
+}
+
+
+
+
+/********* FORM *********/
+
+.form{
+    margin-top: 8rem;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    margin-bottom: 5rem;
+
+    &__title{
+        @include mainTitle;
+    }
+
+    &__fieldset{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 1rem;
+        background: linear-gradient(to right, rgba(35, 221, 235, .6), rgba(145, 59, 202, .6));
+        padding: 1rem;
+
+        &__legend{
+            margin-left: 0.2rem;
+            font-weight: 600;
+            font-size: 120%;
+            box-shadow: 0.2rem 0.2rem 0.2rem rgb(98, 68, 102);
+            background-color: white;
+            border-radius: 1rem;
+            padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+            width: 12rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        &__innerfield{
+            margin: 0.5rem;
+            display: flex;
+            flex-direction: column;
+
+            &__label{
+                font-size: 90%;
+            }
+        }
+
+        &__checkbox{
+            padding-top: 0.5rem;
+            display: flex;
+            flex-direction: column;
+
+            &checkboxText{
+                display: flex;
+                flex-direction: row;
+                column-gap: 0.2rem;
+            }
+        }
+    }
+
+    &__buttons{
+        display: flex;
+        flex-direction: row;
+        column-gap: 2.5rem;
+        font-size: large;
+        border: none;
+        padding: 1rem;
+
+        &__submit{
+            background-color: #692dad;
+            color: white;
+            width: 4rem;
+            height: 2rem;
+            line-height: normal;
+        }
+
+        &__reset{
+            background-color: white;
+            color: #692dad;
+            width: 4rem;
+            height: 2rem;
+            line-height: normal;
+        }
+    }
+}
+
+/* FOOTER */
+
+.footer{
+    background-color: #44315D;
+    background-image: url(../images/scotland.jpg);
+    background-position: bottom;
+    color: ghostwhite;
+    margin-top: 3rem;
+
+    &__logoChico{
+        color: white;
+        font-family: Sacramento, PT Sans, sans-serif;
+        font-weight: 400;
+        font-size: 1.5rem;
+        width: fit-content;
+        height: fit-content;
+        margin: 1rem 0 0 1rem;
+    }
+
+    &__navbar{
+        margin: 1rem 0 1rem 0rem;
+        line-height: 1.4rem;
+        display: inline-block;
+    }
+
+    &__list-item{
+        color: white;
+    }
+
+    &__iconos{
+        margin-top: 1rem;
+    }
+
+    &__icon{
+        padding: 0 0.5rem 0 0.5rem;
+    }
+}
+
+
+/********************************** BIGGER SCREEN **********************************/
+
+@media screen and (min-width: 768px) {
+    .banner__text{
+        margin-top: 1rem;
+        font-size: 700%;
+    }
+    
+    .levelForm__fieldset{
+        width: 60%;
+    }
+
+}

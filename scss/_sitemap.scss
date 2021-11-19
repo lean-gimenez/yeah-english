@@ -1,0 +1,24 @@
+.siteMap__body{
+    @include body("../images/newzealand.jpg");
+}
+
+.map{
+    margin-top: 10rem;
+
+    &__title{
+        @include mainTitle;
+    }
+
+    .map__linkset{
+        margin-top: 2rem;
+
+        &__links{
+            text-shadow:#44315D 1px 1px 1px;
+
+            &:hover{
+                border-bottom: #44315D 5px solid;
+            }
+        }
+    }
+}
+
