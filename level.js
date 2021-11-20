@@ -2,15 +2,18 @@ function formSent(){
     
     //user name
     let name = document.getElementById("name");
-
+    
     //user e-mail
-    let email = document.getElementById("email");
+    //let email = document.getElementById("email");
 
     //total of questions
     let total = 5;
 
     //score
     let score = 0;
+
+    //levels
+    let level = ["Elementary", "Pre-Intermediate", "Intermediate", "Upper-Intermediate", "Advanced"]
 
     //reference to form
     let form = document.forms["levelForm"];
@@ -35,9 +38,8 @@ function formSent(){
         }
     }
 
-    
     let results = document.getElementById("results");
-    results.innerHTML = '<div class="p-4"><h3><span>' + name.value + '</span>, your score is <span>' + score + '</span></h3> </div> <div class="p-2"> <h5>List of levels</h5> <ul><li>1 point = Elementary</li><li>2 points = Pre-Intermediate</li><li>3 points = Intermediate</li><li>4 points = Upper-Intermediate</li><li>5 points = Advanced</li></ul></div>';
+    results.innerHTML = '<div class="p-4"><h3><span>' + name.value + '</span>, your score is <span>' + score + '</span> and your level is <span>' + level[score-1] + '</span></h3> </div> <div class="p-4"><h4><a href="./pricing.html">Here</a> you can check the prices for your level</h4></div>';
 
     return false;
 }

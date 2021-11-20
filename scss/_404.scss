@@ -1,0 +1,72 @@
+.error{
+    
+    &__body{
+        @include body("../images/errorMap.jpg");
+    }
+
+    &__main{
+        display: block;
+        align-items: center;
+
+        &__img{
+            color: white;
+        }
+
+        &__title{
+            @include mainTitle;
+            font-size: 3.5rem;
+        }
+
+        &__separator{
+            background-color: white;
+            height: 5px;
+            width: 100px;
+            margin-bottom: 1rem;
+            
+        }
+    
+        &__subtitle{
+            color: white;
+            font-size: 2rem;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    
+    .error{
+    
+        &__body{
+            @include body("../images/errorMap.jpg");
+        }
+
+        &__main{
+            margin-top: 4rem;
+            display: block;
+            align-items: center;
+
+            &__img{
+                color: white;
+            }
+
+            &__title{
+                @include mainTitle;
+                font-size: 5rem;
+            }
+        
+            &__subtitle{
+                color: white;
+                font-size: 3rem;
+                text-align: center;
+            }
+
+            &__icons{
+                margin-top: 3rem;
+            }
+
+        }
+        
+
+    }
+
+}

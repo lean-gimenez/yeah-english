@@ -322,6 +322,14 @@ ul, ol {
   height: 9.2rem;
 }
 
+.index__table-title {
+  padding: 0.5rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-radius: 5px;
+}
+
 /********************************** BIGGER SCREEN **********************************/
 @media screen and (min-width: 768px) {
   .index-table {
@@ -549,5 +557,79 @@ ul, ol {
 
 .map .map__linkset__links:hover {
   border-bottom: #44315D 5px solid;
+}
+
+.error__body {
+  background-image: url("../images/errorMap.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.error__main {
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.error__main__img {
+  color: white;
+}
+
+.error__main__title {
+  text-shadow: #44315D 1px 1px 1px;
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 3rem;
+  font-size: 3.5rem;
+}
+
+.error__main__separator {
+  background-color: white;
+  height: 5px;
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
+.error__main__subtitle {
+  color: white;
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .error__body {
+    background-image: url("../images/errorMap.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .error__main {
+    margin-top: 4rem;
+    display: block;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .error__main__img {
+    color: white;
+  }
+  .error__main__title {
+    text-shadow: #44315D 1px 1px 1px;
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 3rem;
+    font-size: 5rem;
+  }
+  .error__main__subtitle {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+  }
+  .error__main__icons {
+    margin-top: 3rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
