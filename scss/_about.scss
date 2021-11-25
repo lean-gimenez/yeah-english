@@ -23,6 +23,7 @@
 
 .mainContent{
     margin-top: 8rem;
+    margin-bottom: 5rem;
 
     &__text--frame{
         color: white;
@@ -52,4 +53,20 @@
     }
 }
 
+.card{
+    margin: 0.5rem;
 
+    .btn-purple{
+        width: 100%;
+        height: fit-content;
+        color: white;
+        font-weight: bolder;
+        background-color: rgb(145, 59, 202);
+    }
+
+    .text-justify{
+        text-align: justify;
+        font-size: 0.8rem;
+        height: 13rem;
+    }
+}

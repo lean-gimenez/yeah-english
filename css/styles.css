@@ -357,6 +357,7 @@ ul, ol {
 
 .mainContent {
   margin-top: 8rem;
+  margin-bottom: 5rem;
 }
 
 .mainContent__text--frame {
@@ -431,6 +432,26 @@ ul, ol {
           transition-duration: 2s;
   width: 22.5rem;
   height: 13.5rem;
+}
+
+.card {
+  margin: 0.5rem;
+}
+
+.card .btn-purple {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  color: white;
+  font-weight: bolder;
+  background-color: #913bca;
+}
+
+.card .text-justify {
+  text-align: justify;
+  font-size: 0.8rem;
+  height: 13rem;
 }
 
 /******************* LEVEL *******************/
