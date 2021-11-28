@@ -5,12 +5,14 @@
 }
 
 #results{
-    background: linear-gradient(to right, rgb(35, 221, 235), rgb(145, 59, 202));
-    border-radius: 1rem;
     color: white;
+    background: linear-gradient(to right, #24ddeb, #913bca);
+    box-shadow: 0.2rem 0.2rem 0.2rem #7f5585;
+    border-radius: 1rem;
+    padding: 0.5rem;
 
-    & h2{
-        padding: 1rem;
+    & h3, & h5{
         flex-wrap: wrap;
+        padding: 0.5rem;
     }
 }

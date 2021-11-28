@@ -83,7 +83,7 @@
     margin: 5rem 0 5rem 0;
 
     &__chart{
-        $pic-width: 22rem;
+        $pic-width: 20rem;
         $pic-height: 8rem;
         padding: 1.5rem;
         width: $pic-width;
@@ -127,5 +127,32 @@
         padding: 2rem;
         margin-top: 6rem;
         
+    }
+
+    .qualities{
+        margin: 5rem 0 5rem 0;
+    
+        &__chart{
+            $pic-width: 24rem;
+            $pic-height: 9rem;
+            padding: 1.5rem;
+            width: $pic-width;
+            height: $pic-height;
+            background: linear-gradient(to right, rgb(35, 221, 235), rgb(145, 59, 202));
+            text-shadow: #44315D 0.1rem 0.1rem 0.5rem;
+            margin: 1rem;
+            border-radius: 1rem;
+            text-align: center;
+    
+            & h2{
+                font-size: 2rem;
+            }
+    
+            &:hover{
+                transition-duration: 1s;
+                width: $pic-width*1.15;
+                height: $pic-height*1.15;
+            }
+        }
     }
 }
