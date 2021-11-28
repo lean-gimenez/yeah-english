@@ -12,6 +12,7 @@ Para construir este sitio web se utilizó
 
 * HTML
 * CSS
+* JS
 * Frameworks: *Bootstrap & SASS*
 * XML para el sitemap
 * Metodología BEM para la organización de clases
