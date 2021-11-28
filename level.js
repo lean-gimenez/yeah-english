@@ -39,7 +39,7 @@ function formSent(){
     }
 
     let results = document.getElementById("results");
-    results.innerHTML = '<h3><span>' + name.value + '</span>, your score is <span>' + score + '</span> and your level is <span>' + level[score-1] + '</span></h3> <h5><a href="./pricing.html">Here</a> you can check the prices for your level</h5>';
+    results.innerHTML = '<h3 id="results-content"><span>' + name.value + '</span>, your score is <span>' + score + '</span> and your level is <span>' + level[score-1] + '</span></h3> <h5><a href="./pricing.html">Here</a> you can check the prices for your level</h5>';
 
     return false;
 }

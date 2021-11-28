@@ -44,10 +44,12 @@
 
     
     <!-- LEVEL TEST -->
-    <main class="container d-flex flex-column justify-content-center">
+    <main class="container d-flex flex-column justify-content-center" id="top">
         
         <form action="#" class="d-flex d-flex flex-column align-items-center form" name="levelForm" onsubmit="return formSent()">
+            
             <h1 class="form__title">LET'S SEE WHAT YOU KNOW...</h1>
+
             <!-- PERSONAL DATA -->
             <fieldset class="form__fieldset">
                 <div id="error"></div>
@@ -76,13 +78,6 @@
                 <div class="d-flex align-items-center">
                     <input type="radio" name="q1" value="d">what
                 </div>
-                <!-- <select id="q1" name="q1">
-                    <option value="nothing">Choose an option</option>
-                    <option value="wrong">want</option>
-                    <option value="wrong">wanting</option>
-                    <option value="right">wants</option>
-                    <option value="wrong">what</option>
-                </select> -->
             </fieldset>
 
             <!-- Q2 -->
@@ -101,13 +96,6 @@
                 <div class="d-flex align-items-center">
                     <input type="radio" name="q2" value="d">has
                 </div>
-                <!-- <select id="q2" name="q2">
-                    <option value="nothing">Choose an option</option>
-                    <option value="wrong">have</option>
-                    <option value="wrong">does</option>
-                    <option value="right">did</option>
-                    <option value="wrong">has</option>
-                </select> -->
             </fieldset>
 
             <!-- Q3 -->
@@ -174,6 +162,15 @@
         <!-- RESULTS -->
         <div class="align-self-center text-center" id="results"></div>
     </main>
+
+    <!-- GO UP BUTTON -->
+    <section class="container-fluid d-flex justify-content-end">
+        <a href="#top">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
+                <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z"/>
+            </svg>
+        </a>
+    </section>
 
     <!-- FOOTER -->
     <footer class="container-fluid footer d-flex justify-content-between">

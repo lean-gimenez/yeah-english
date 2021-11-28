@@ -45,7 +45,7 @@ ul, ol {
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: 1rem;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 .form__title {
@@ -459,9 +459,10 @@ ul, ol {
 
 .card {
   margin: 0.5rem;
+  width: 18rem;
 }
 
-.card .btn-purple {
+.card__btn {
   width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -471,7 +472,7 @@ ul, ol {
   background-color: #913bca;
 }
 
-.card .text-justify {
+.card__text-justify {
   text-align: justify;
   font-size: 0.9rem;
   /*height: 13rem;*/
@@ -482,9 +483,9 @@ ul, ol {
 }
 
 @media screen and (min-width: 768px) {
-  .text-justify {
-    height: 14rem;
-    margin: 2rem 0 0 0;
+  .card__text-justify {
+    height: 15rem;
+    margin: 1rem 0 1rem 0;
   }
 }
 
@@ -496,7 +497,7 @@ ul, ol {
   background-size: cover;
 }
 
-#results {
+#results-content {
   color: white;
   background: -webkit-gradient(linear, left top, right top, from(#24ddeb), to(#913bca));
   background: linear-gradient(to right, #24ddeb, #913bca);
@@ -506,7 +507,7 @@ ul, ol {
   padding: 0.5rem;
 }
 
-#results h3, #results h5 {
+#results-content h3, #results-content h5 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 0.5rem;
@@ -576,6 +577,21 @@ ul, ol {
   text-align: right;
   width: 9rem;
   padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+}
+
+.price-table__posttable {
+  line-height: 1.7rem;
+  margin: 4rem 0 2.5rem 0;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 1rem;
+}
+
+.price-table__posttable h5 {
+  font-size: 2rem;
+  padding: 1rem;
 }
 
 /******************* CONTACT *******************/

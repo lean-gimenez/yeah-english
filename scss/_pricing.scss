@@ -54,5 +54,18 @@
         }
     }
     
-    
+    &__posttable{
+        line-height: 1.7rem;
+        margin: 4rem 0 2.5rem 0;
+        padding: 1rem;
+        font-size: 1.5rem;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.6);
+        border-radius: 1rem;
+
+        & h5{
+            font-size: 2rem;
+            padding: 1rem;
+        }
+    }
 }

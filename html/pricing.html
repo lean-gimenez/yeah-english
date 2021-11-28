@@ -44,7 +44,7 @@
 
 
     <!-- PRICES -->
-    <main class="container d-flex flex-column justify-content-center price-table">
+    <main class="container d-flex flex-column justify-content-center price-table" id="top">
         <h1 class="price-table__title">PRICES</h1>
 
         <section class="price-table__pretable">
@@ -147,7 +147,22 @@
                 </tr>
             </tbody>
         </table>
+
+        <section class="price-table__posttable">
+            <h5>What's next?</h5>
+            <p>Now that you have all this info,</p>
+            <p>you can reach out to me <a class="price-table__link--hover" href="./contact.html">here</a>.</p>
+        </section>
     </main>
+
+    <!-- GO UP BUTTON -->
+    <section class="container-fluid d-flex justify-content-end">
+        <a href="#top">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
+                <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z"/>
+            </svg>
+        </a>
+    </section>
 
     <!-- FOOTER -->
     <footer class="container-fluid footer d-flex justify-content-between">

@@ -55,8 +55,9 @@
 
 .card{
     margin: 0.5rem;
+    width: 18rem;
 
-    .btn-purple{
+    &__btn{
         width: 100%;
         height: fit-content;
         color: white;
@@ -64,7 +65,7 @@
         background-color: rgb(145, 59, 202);
     }
 
-    .text-justify{
+    &__text-justify{
         text-align: justify;
         font-size: 0.9rem;
         /*height: 13rem;*/
@@ -75,8 +76,8 @@
 
 @media screen and (min-width: 768px){
 
-    .text-justify{
-        height: 14rem;
-        margin: 2rem 0 0 0;
+    .card__text-justify{
+        height: 15rem;
+        margin: 1rem 0 1rem 0;
     }
 }
